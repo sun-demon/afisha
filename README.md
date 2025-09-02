@@ -95,13 +95,15 @@
 Этот учебный проект был реализован благодаря учащимся из ниже указанных учебных организаций.
 
 <a href="https://www.mirea.ru/">
-    <img src="https://www.mirea.ru/upload/medialibrary/a8c/qqv5o4yfjnctqn0ir7s5bbm5b8daj2ku/db8f6fb596c7752b441b0cdfa544bb20.png" alt="РТУ МИРЭА" width="64" height="64">
+  <img src="https://www.mirea.ru/upload/medialibrary/a8c/qqv5o4yfjnctqn0ir7s5bbm5b8daj2ku/db8f6fb596c7752b441b0cdfa544bb20.png" alt="РТУ МИРЭА" width="64" height="64">
 </a>
 
 <a href="https://kf.bmstu.ru/">
-<div style="position: relative; padding-left: 2px; width: 64px; height: 64px; overflow: hidden;">
-<img style="position: absolute; transform: scale(1.75,1.75);" src="https://upload.wikimedia.org/wikipedia/ru/thumb/b/bd/%D0%93%D0%B5%D1%80%D0%B1_%D0%9C%D0%93%D0%A2%D0%A3_%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8_%D0%9D._%D0%AD._%D0%91%D0%B0%D1%83%D0%BC%D0%B0%D0%BD%D0%B0.svg/1200px-%D0%93%D0%B5%D1%80%D0%B1_%D0%9C%D0%93%D0%A2%D0%A3_%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8_%D0%9D._%D0%AD._%D0%91%D0%B0%D1%83%D0%BC%D0%B0%D0%BD%D0%B0.svg.png" alt="КФ МГТУ им. Н.Э. Баумана">
-</div>
+  <div style="position: relative; padding-left: 2px; width: 64px; height: 64px; overflow: hidden;">
+    <div style="position: absolute; left: -50; top: -50;">
+    <img src="https://upload.wikimedia.org/wikipedia/ru/thumb/b/bd/%D0%93%D0%B5%D1%80%D0%B1_%D0%9C%D0%93%D0%A2%D0%A3_%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8_%D0%9D._%D0%AD._%D0%91%D0%B0%D1%83%D0%BC%D0%B0%D0%BD%D0%B0.svg/1200px-%D0%93%D0%B5%D1%80%D0%B1_%D0%9C%D0%93%D0%A2%D0%A3_%D0%B8%D0%BC%D0%B5%D0%BD%D0%B8_%D0%9D._%D0%AD._%D0%91%D0%B0%D1%83%D0%BC%D0%B0%D0%BD%D0%B0.svg.png" alt="КФ МГТУ им. Н.Э. Баумана" width="64">
+    </div>
+  </div>
 </a>
 
 
