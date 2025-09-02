@@ -1,0 +1,23 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="12%" stop-color="#0ff"/>
+      <stop offset="78%" stop-color="#8b00ff"/>
+    </linearGradient>
+
+    <style><![CDATA[
+      .a-stroke { 
+        fill: none; 
+        stroke: #fff; 
+        stroke-width: 100; 
+        stroke-linecap: round; 
+        stroke-linejoin: round; 
+      }
+    ]]></style>
+  </defs>
+
+  <rect x="64" y="64" width="896" height="896" rx="200" fill="url(#bg)"/>
+
+  <path class="a-stroke" d="M280 820 L 512 200 L 744 820"/>
+  <line class="a-stroke" x1="355" y1="620" x2="665" y2="620"/>
+</svg>
