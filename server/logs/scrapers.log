@@ -1,0 +1,11 @@
+2025-09-07 22:17:25,224 - scrapers - INFO - scanned 1/10 rubric "cinema": found 395 events
+2025-09-07 22:42:00,775 - scrapers - INFO - scanned 1/10 rubric "cinema": found 120 events
+2025-09-07 22:42:17,133 - scrapers - INFO - scanned 2/10 rubric "concert": found 120 events
+2025-09-07 22:42:35,191 - scrapers - INFO - scanned 3/10 rubric "theatre": found 120 events
+2025-09-07 22:42:52,093 - scrapers - INFO - scanned 4/10 rubric "kids": found 120 events
+2025-09-07 22:43:08,894 - scrapers - INFO - scanned 5/10 rubric "art": found 120 events
+2025-09-07 22:43:17,153 - scrapers - INFO - scanned 6/10 rubric "sport": found 62 events
+2025-09-07 22:43:32,843 - scrapers - INFO - scanned 7/10 rubric "standup": found 120 events
+2025-09-07 22:43:49,911 - scrapers - INFO - scanned 8/10 rubric "excursions": found 120 events
+2025-09-07 22:44:06,687 - scrapers - INFO - scanned 9/10 rubric "show": found 120 events
+2025-09-07 22:44:07,221 - scrapers - INFO - scanned 10/10 rubric "quests": found 0 events
