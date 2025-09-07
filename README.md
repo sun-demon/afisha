@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://afisha.ddns.net">
-    <img src="favicon.png" alt="Афиша логотип" width="165" height="165">
+    <img src="favicon.svg" alt="Афиша логотип" width="165" height="165">
   </a>
 </p>
 
