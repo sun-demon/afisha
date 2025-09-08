@@ -39,9 +39,9 @@ def scrape_events() -> Optional[list]:
                 
                 event_list_selector = create_data_test_id_selector('mainPage.eventsList.list')
                 rubric_page.wait_for_selector(event_list_selector)
-                events_list = rubric_page.query_selector(event_list_selector)
+                events_list_tag = rubric_page.query_selector(event_list_selector)
 
-                if not events_list:
+                if not events_list_tag:
                     raise RuntimeError(f'not found main page event list selector: {event_list_selector}')
 
                 events_more_selector = create_data_test_id_selector('mainPage.rubricContent.eventsListMore')
@@ -55,37 +55,42 @@ def scrape_events() -> Optional[list]:
                         break
 
                 event_selector = create_data_test_id_selector('eventCard.root')
-                event_list = rubric_page.query_selector_all(event_selector)
+                event_tags = rubric_page.query_selector_all(event_selector)
                 
-                for event in event_list:
+                for event_tag in event_tags:
+                    id = event_tag.get_attribute('data-event-id')
+
                     title_selector = create_data_test_id_selector('eventCard.eventInfoTitle')
-                    event.wait_for_selector(title_selector)
-                    title = event.query_selector(title_selector).inner_text()
+                    event_tag.wait_for_selector(title_selector)
+                    title = event_tag.query_selector(title_selector).inner_text()
                     
-                    image_tag = event.query_selector('img')
+                    image_tag = event_tag.query_selector('img')
                     image_url = image_tag.get_attribute('src') if image_tag else None
                     
-                    rating_tag = event.query_selector(create_data_test_id_selector('event-card-rating'))
+                    rating_tag = event_tag.query_selector(create_data_test_id_selector('event-card-rating'))
                     rating = rating_tag.inner_text() if rating_tag else None
 
-                    price_tag = event.query_selector(create_data_test_id_selector('event-card-price'))
+                    price_tag = event_tag.query_selector(create_data_test_id_selector('event-card-price'))
                     price = price_tag.inner_text() if price_tag else None
 
-                    details_selectors = create_data_test_id_selector('eventCard.eventInfoDetails') + ' li'
-                    event.wait_for_selector(details_selectors)
-                    details = ' • '.join(map(lambda tag: tag.inner_text(), event.query_selector_all(details_selectors)))
+                    detail_selector = create_data_test_id_selector('eventCard.eventInfoDetails') + ' li'
+                    event_tag.wait_for_selector(detail_selector)
+                    details = ' • '.join(map(lambda tag: tag.inner_text(), event_tag.query_selector_all(detail_selector)))
 
-                    events.append({
-                        'rubric': rubric,
+                    event = {
+                        'id': id,
+
                         'title': title,
                         'image_url': image_url,
                         'rating': rating,
                         'price': price,
-                        'details': details
-                    })                            
+                        'details': details,
+                        
+                        'rubric': rubric
+                    }                      
 
                 
-                logger.info(f'scanned {i}/{len(rubrics)} rubric "{rubric}": found {len(event_list)} events')
+                logger.info(f'scanned {i}/{len(rubrics)} rubric "{rubric}": found {len(event_tags)} events')
 
             browser.close()
 
