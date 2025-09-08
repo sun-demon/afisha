@@ -1,7 +1,8 @@
-import logging
-from logging.handlers import RotatingFileHandler
 import sys
 from pathlib import Path
+
+import logging
+from logging.handlers import RotatingFileHandler
 
 
 __scrapers_logger_name = 'scrapers'
@@ -61,6 +62,7 @@ def setup_logging(logging_level: _Level = logging.DEBUG):
     # logging for library (a little less noise)
     logging.getLogger('playwright').setLevel(logging.WARNING)
     logging.getLogger('sqlalchemy').setLevel(logging.WARNING)
+    logging.getLogger('asyncio').setLevel(logging.WARNING)
 
-    logging.info('Logging was succesfully configured')
+    # logging.debug('Logging was succesfully configured')
     _logging_configured = True

@@ -8,11 +8,6 @@ import aiofiles
 from models import EventCreate
 
 
-async def ensure_data_directory():
-    """Create data if not exists"""
-    os.makedirs("data", exist_ok=True)
-
-
 async def load_events_from_file(file_path: str) -> List[Dict]:
     """Download from JSON file"""
     try:

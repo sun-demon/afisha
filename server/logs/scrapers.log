@@ -1,11 +1,14 @@
-2025-09-07 22:17:25,224 - scrapers - INFO - scanned 1/10 rubric "cinema": found 395 events
-2025-09-07 22:42:00,775 - scrapers - INFO - scanned 1/10 rubric "cinema": found 120 events
-2025-09-07 22:42:17,133 - scrapers - INFO - scanned 2/10 rubric "concert": found 120 events
-2025-09-07 22:42:35,191 - scrapers - INFO - scanned 3/10 rubric "theatre": found 120 events
-2025-09-07 22:42:52,093 - scrapers - INFO - scanned 4/10 rubric "kids": found 120 events
-2025-09-07 22:43:08,894 - scrapers - INFO - scanned 5/10 rubric "art": found 120 events
-2025-09-07 22:43:17,153 - scrapers - INFO - scanned 6/10 rubric "sport": found 62 events
-2025-09-07 22:43:32,843 - scrapers - INFO - scanned 7/10 rubric "standup": found 120 events
-2025-09-07 22:43:49,911 - scrapers - INFO - scanned 8/10 rubric "excursions": found 120 events
-2025-09-07 22:44:06,687 - scrapers - INFO - scanned 9/10 rubric "show": found 120 events
-2025-09-07 22:44:07,221 - scrapers - INFO - scanned 10/10 rubric "quests": found 0 events
+2025-09-08 15:05:53,782 - scrapers - INFO - Start scraping moscow event rubrics.
+2025-09-08 15:06:15,562 - scrapers - INFO - Scanned 1/10 rubric "cinema": found 120 events.
+2025-09-08 15:06:34,633 - scrapers - INFO - Scanned 2/10 rubric "concert": found 120 events.
+2025-09-08 15:06:53,803 - scrapers - INFO - Scanned 3/10 rubric "theatre": found 120 events.
+2025-09-08 15:07:12,649 - scrapers - INFO - Scanned 4/10 rubric "kids": found 120 events.
+2025-09-08 15:07:31,095 - scrapers - INFO - Scanned 5/10 rubric "art": found 120 events.
+2025-09-08 15:07:40,795 - scrapers - INFO - Scanned 6/10 rubric "sport": found 62 events.
+2025-09-08 15:07:59,643 - scrapers - INFO - Scanned 7/10 rubric "standup": found 120 events.
+2025-09-08 15:08:18,195 - scrapers - INFO - Scanned 8/10 rubric "excursions": found 120 events.
+2025-09-08 15:08:35,179 - scrapers - INFO - Scanned 9/10 rubric "show": found 120 events.
+2025-09-08 15:08:35,973 - scrapers - INFO - Scanned 10/10 rubric "quests": found 0 events.
+2025-09-08 15:08:36,159 - scrapers - INFO - Stop scraping.
+2025-09-08 15:08:36,163 - scrapers - INFO - Saved events to data/moscow_events_2025.09.08_15.08.36.json file.
+2025-09-08 15:16:56,368 - scrapers - INFO - Start scraping moscow event rubrics.
