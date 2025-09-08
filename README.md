@@ -67,7 +67,7 @@
 
 ## Документация
 
-Документация Афишы, содержащаяся в этом репозитории в корневом каталоге, собрана с помощью [Sphinx](https://pypi.org/project/Sphinx/) и [Dokka](https://github.com/Kotlin/dokka/) и публично размещена на странице GitHub по адресу <https://afisha.ddns.net/docs/1.0/>.
+Документация Афишы, содержащаяся в этом репозитории в корневом каталоге, собрана с помощью [Swagger](https://swagger.io/) и [Dokka](https://github.com/Kotlin/dokka/) и публично размещена на странице GitHub по адресу <https://afisha.ddns.net/docs/1.0/>.
 
 
 ## Создатели
