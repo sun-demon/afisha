@@ -2,7 +2,7 @@ import os
 import glob
 import json
 from datetime import datetime
-from typing import Optional
+from typing import Optional, Union
 from contextlib import asynccontextmanager
 import logging
 
@@ -70,7 +70,7 @@ async def lifespan(app: FastAPI):
 app = FastAPI(title='Afisha API', lifespan=lifespan)
 
 
-def get_latest_data_file() -> str | None:
+def get_latest_data_file() -> Union[str, None]:
     files = glob.glob(os.path.join(DATA_DIR, 'moscow_events*.json'))
     if not files:
         return None
@@ -180,7 +180,7 @@ def get_db():
 # Events
 # -----------------------------
 @app.get('/api/events')
-def get_events(rubric: str | None = None, db: Session = Depends(get_db)):
+def get_events(rubric: Union[str, None] = None, db: Session = Depends(get_db)):
     """Get all events or events by rubric (?rubric=cinema)"""
     query = db.query(Event)
     if rubric:
@@ -192,7 +192,7 @@ def get_events(rubric: str | None = None, db: Session = Depends(get_db)):
 # Auth
 # -----------------------------
 @app.post('/api/register')
-def register_user(username: str, password: str, email: str | None = None, db: Session = Depends(get_db)):
+def register_user(username: str, password: str, email: Union[str, None] = None, db: Session = Depends(get_db)):
     """Register new user (now without JWT, just a blank)."""
     user = User(username=username, email=email, password_hash=password)  # TODO: hash password
     db.add(user)

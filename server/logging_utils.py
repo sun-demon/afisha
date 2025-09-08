@@ -1,5 +1,6 @@
 import sys
 from pathlib import Path
+from typing import Union
 
 import logging
 from logging.handlers import RotatingFileHandler
@@ -7,7 +8,7 @@ from logging.handlers import RotatingFileHandler
 
 __scrapers_logger_name = 'scrapers'
 _logging_configured = False
-_Level = int | str
+_Level = Union[int, str]
 
 
 def get_scraper_logger() -> logging.Logger:
