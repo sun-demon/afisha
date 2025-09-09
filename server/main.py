@@ -180,7 +180,7 @@ def get_db():
 # Events
 # -----------------------------
 @app.get('/api/events')
-def get_events(rubric: Union[str, None] = None, db: Session = Depends(get_db)):
+def get_events(rubric: Union[str, None] = None, user_id: Union[int, None] = None, token: Union[str, None] = None, db: Session = Depends(get_db)):
     """Get all events or events by rubric (?rubric=cinema)"""
     query = db.query(Event)
     if rubric:

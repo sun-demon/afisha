@@ -1,14 +1,21 @@
-# Python cache
+# === Backend (Python) ===
 server/__pycache__/
-
-# Database
-server/db/
-
-# Virtual environment
 server/venv/
-
-# Logs
+server/db/
 server/logs/
+# server/data/   # еif want ignore
 
-# Data files (optional)
-# server/data/
+# === Android (Kotlin) ===
+afisha/mobile/.gradle/
+afisha/mobile/build/
+afisha/mobile/local.properties
+afisha/mobile/.idea/
+afisha/mobile/captures/
+afisha/mobile/*.iml
+afisha/mobile/.externalNativeBuild/
+afisha/mobile/cxx/
+afisha/mobile/.DS_Store
+afisha/mobile/com_crashlytics_build_id.xml
+afisha/mobile/output.json
+afisha/mobile/*.keystore
+afisha/mobile/*.jks
