@@ -1,3 +1,6 @@
 [submodule "server"]
 	path = server
 	url = https://github.com/sun-demon/afisha-server.git
+[submodule "mobile"]
+	path = mobile
+	url = https://github.com/sun-demon/afisha-mobile.git
