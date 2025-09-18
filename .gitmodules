@@ -4,3 +4,6 @@
 [submodule "mobile"]
 	path = mobile
 	url = https://github.com/sun-demon/afisha-mobile.git
+[submodule "scraper"]
+	path = scraper
+	url = https://github.com/sun-demon/afisha-scraper.git
